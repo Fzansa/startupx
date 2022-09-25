@@ -1,0 +1,261 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.mainImg{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+nav{
+
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+span{
+    color: #3f87bb;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-style: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #676b6e; 
+    /* color: #3f87bb; */
+    transition: .5s ;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    right: 6px;
+}
+
+#check{
+    display: none;
+}
+
+
+/* ------------------------hero -------------------------------------- */
+
+.sectionContainer{
+    padding: 12px 80px;
+    
+}
+
+
+.mainHero{
+    width:50%;
+    margin:50px 0;
+}
+
+
+.mainHero > h1{
+    font-size: 40px;
+    padding:14px 0;
+    color: #3f87bb;
+    letter-spacing: 3px;
+}
+
+.mainHero > p{
+    font-size: 18px;
+    color: rgba(119, 109, 109, 0.8);
+    line-height: 28px;
+    padding: 26px 0;
+
+}
+
+.mainHero > a{
+    display: block;
+    background-color: #3f87bb;
+    padding:12px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    border-radius: 23px;
+    width: 300px;
+    text-align: center;
+    margin: 26px 0;
+    letter-spacing: 2px;
+}
+
+.mainHero > a:hover{
+    background-color: #0082e6;
+    transform: scale(1.1);
+    transition: all .5s linear;
+}
+
+.icon{
+    padding:10px 0;
+}
+
+.icon > span{
+    font-size: 20px;
+    padding: 6px;
+    cursor: pointer;
+    
+}
+
+.icon > span:hover i{
+    transition: all .5s linear;
+    transform: scale(1.2);
+}
+.icon > span:nth-child(2){
+    color:#da1a3a;0072b1
+}
+
+.icon > span:nth-child(3){
+    color:#0072b1;
+}
+
+.icon > span:nth-child(4){
+    color:#da1a3a;
+}
+
+
+
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .sectionContainer{
+        padding: 12px 50px;
+        
+    }
+}
+
+
+
+@media (max-width:858px){
+    body{
+        background-size: fit;
+    }
+    .checkbtn{
+        display: block;
+    }
+
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    top: 0px;
+    left:-100%;
+    top:-100%;
+    text-align: center;
+    transition: all .5s linear;
+    z-index: 1;
+    padding: 50px 0;
+    border-radius: 200%;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    font-size: 20px;
+}
+
+a:hover,a.active{
+    background: none;
+    color: #0082e6;
+}
+
+#check:checked ~ ul{
+    left:0;
+    top:0;
+    border-radius: 0;
+    
+}
+
+
+.mainHero{
+    width:100%;
+    margin:50px 0;
+    
+}
+
+
+}
+
+@media (max-width:354px){
+
+    .sectionContainer{
+        padding: 12px 40px;
+        
+    }
+
+    .mainHero{
+        width:100%;
+    }
+    
+    
+    .mainHero > h1{
+        font-size: 23px;
+    }
+    
+    .mainHero > p{
+        font-size: 18px;
+    
+    }
+    
+    .mainHero > a{
+        padding:12px;
+        font-size: 14px;
+        width: 250px;
+    }
+    
+}
